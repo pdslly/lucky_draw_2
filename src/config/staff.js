@@ -7,7 +7,7 @@ const getImageUrl = (index) => {
 
 const _staff = new Array(80).fill(0).map((_, i) => ({
   id: i,
-  name: faker.person.fullName(),
+  name: faker.person.firstName(),
   department: faker.person.jobType(),
   avatar: getImageUrl(faker.number.int({ min: 1, max: 25 })),
 }));
